@@ -1,1 +1,356 @@
 this is my first demo text file 
+Alex@Alex-PC MINGW32 ~
+$ cd
+
+Alex@Alex-PC MINGW32 ~
+$ cd /c
+
+Alex@Alex-PC MINGW32 /c
+$ 1s
+bash: 1s: command not found
+
+Alex@Alex-PC MINGW32 /c
+$ ls
+'$AV_ASW'/                  hiberfil.sys      Recovery/
+'$Recycle.Bin'/             Intel/           'System Volume Information'/
+ autoexec.bat               MSOCache/         Users/
+ config.sys                 pagefile.sys      Windows/
+'Documents and Settings'@   PerfLogs/         xampp/
+ Drivers/                  'Program Files'/
+ git/                       ProgramData/
+
+Alex@Alex-PC MINGW32 /c
+$ cd git/
+
+Alex@Alex-PC MINGW32 /c/git
+$ ls
+
+Alex@Alex-PC MINGW32 /c/git
+$ git config --global user.name "mariya sopia"
+
+Alex@Alex-PC MINGW32 /c/git
+$ git config --global user.email "mariyasopia08@gmail.com"
+
+Alex@Alex-PC MINGW32 /c/git
+$ git clone https://github.com/MARIYASOPIA/demosite.git
+Cloning into 'demosite'...
+warning: You appear to have cloned an empty repository.
+
+Alex@Alex-PC MINGW32 /c/git
+$ ls
+demosite/
+
+Alex@Alex-PC MINGW32 /c/git
+$
+
+Alex@Alex-PC MINGW32 /c/git
+$ cd demosite/
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ ls
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$  echo "# demosite" >> README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/MARIYASOPIA/demosite.git
+git push -u origin master
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git init
+Reinitialized existing Git repository in C:/git/demosite/.git/
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git commit -m "first commit"
+[master (root-commit) 3cdbe98] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git remote add origin https://github.com/MARIYASOPIA/demosite.git
+fatal: remote origin already exists.
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git push -u origin master
+Username for 'https://github.com':
+remote: Anonymous access to MARIYASOPIA/demosite.git denied.
+fatal: Authentication failed for 'https://github.com/MARIYASOPIA/demosite.git/'
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ ls
+demosite.txt  README.md
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$  git add demosite.txt
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   demosite.txt
+
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git commit -m "first commit" demosite.txt
+[master ebc8e56] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demosite.txt
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git push -u orgin master
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git push -u origin master
+Username for 'https://github.com':
+remote: Anonymous access to MARIYASOPIA/demosite.git denied.
+fatal: Authentication failed for 'https://github.com/MARIYASOPIA/demosite.git/'
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ ^C
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$  git add demosite.txt
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ ls
+demosite.txt  README.md
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ ^C
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$  git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ cd demosite
+bash: cd: demosite: No such file or directory
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ ls
+demosite.txt  README.md
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git add demosite.txt
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   demosite.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$    ^C
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$  git commit -m "first commit" demosite.txt
+[master 2929078] first commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ rewrite demosite.txt (100%)
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$  git commit -m "first commit" demosite.txt
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git commit -m "second commit" demosite.txt
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ ^C
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git push -u origin master
+Username for 'https://github.com':
+remote: Anonymous access to MARIYASOPIA/demosite.git denied.
+fatal: Authentication failed for 'https://github.com/MARIYASOPIA/demosite.git/'
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   demosite.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git commit -m "second commit" demosite.txt
+[master 987e9f5] second commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git^C
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git push -u origin master
+
+
+
+
+Username for 'https://github.com':
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+remote: Anonymous access to MARIYASOPIA/demosite.git denied.
+fatal: Authentication failed for 'https://github.com/MARIYASOPIA/demosite.git/'
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   demosite.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git commit -m "second commit" demosite.txt
+[master 079bb2e] second commit
+ 1 file changed, 1 insertion(+)
+
+Alex@Alex-PC MINGW32 /c/git/demosite (master)
+$ git push -u origin master
+Username for 'https://github.com':
